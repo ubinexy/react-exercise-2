@@ -7,18 +7,18 @@ class App extends Component {
     cart: 0,
     products: [
       {
-        category: 'iphone',
+        category: 'iPhone',
         products: [
           {
-            name: 'iphone11',
+            name: 'iPhone11',
             price: '5999',
           },
           {
-            name: 'iphoneXS',
+            name: 'iPhoneXS',
             price: '5399',
           },
           {
-            name: 'iphoneSE',
+            name: 'iPhoneSE',
             price: '3599',
           },
         ],
@@ -54,8 +54,11 @@ class App extends Component {
     return (
       <main className="app">
         <header>
-          <span>Store</span>
-          <span>{this.state.cart}</span>
+          <h1>Store</h1>
+          <div>
+            <i className="material-icons md-18">shopping_cart</i>
+            <span>{this.state.cart}</span>
+          </div>
         </header>
         <Categories category={this.state.products} onClick={this.addToCart} />
       </main>

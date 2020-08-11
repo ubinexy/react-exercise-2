@@ -5,8 +5,10 @@ function Categories(props) {
   return props.category.map((element) => {
     return (
       <div key={element.category} className="category">
-        <p>{element.category}</p>
-        <Products products={element.products} onClick={props.onClick} />
+        <h2 style={{ margin: '20px' }}>{element.category}</h2>
+        <div className="columns-container">
+          <Products products={element.products} onClick={props.onClick} />
+        </div>
       </div>
     );
   });

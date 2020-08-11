@@ -39,3 +39,64 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+header {
+  height: 80px;
+  background-color: #2A71DD;
+  padding: 0 20px 0 20px;
+  display: flex;
+  flex-flow:  row nowrap;
+  justify-content: space-between;
+}
+
+header h1 {
+  display: inline-block;
+  color: white;
+  text-align: left;
+  line-height: 70px;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.material-icons.md-18 { 
+  font-size: 18px; 
+}
+
+header div {
+  margin: auto 0;
+  color: white;
+}
+
+header span {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.3em;
+  background-color: #cc434d;
+  text-align: center;
+  font-style: italic;
+  border: 1px, solid, #cc434d;
+  border-radius: 8px;
+}
+.tag-container {
+  display: flex;
+  flex-flow:  row nowrap;
+  justify-content: space-between;
+}
+
+.product-container {
+  display: grid;
+  grid-template-rows: 4fr 15fr 2fr;
+  grid-gap: 10px;
+}
+
+.columns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 20px 0 20px;
+}
+
+button {
+  margin-right: 35px;
+}
